@@ -1,5 +1,5 @@
 # Form Registration
-### is a simple ASP.NET Web Form application.
+### is a simple ASP.NET Web Form application to manage users.
 ### Defining and managing users is one of the most important tasks used in website development, as it includes user management the following tasks:
 - Register a new user.
 - Verify user input.
