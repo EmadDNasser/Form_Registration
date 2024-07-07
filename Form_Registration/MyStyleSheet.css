@@ -1,0 +1,74 @@
+﻿.style1 {
+    font-family: 'Times New Roman';
+    font-size: 20px;
+}
+
+.Text1 {
+    width: 180px;
+}
+
+.h1 {
+    font-family: "times New Roman", Times, serif;
+    background-color: crimson;
+    width: 388px;
+    margin-left: 394px;
+}
+
+.h2 {
+    text-align: center;
+}
+
+.body {
+    background-color: bisque;
+}
+
+.table {
+    font-family: "times New Roman", Times, serif;
+    font-size: x-large;
+    background-color: coral;
+}
+
+.row {
+    height: 40px;
+}
+
+.Title {
+    font-family: "times New Roman", Times, serif;
+}
+
+.TextBox {
+    height: 28px;
+    Width: 180px;
+    font-size: medium;
+}
+
+.Button {
+    text-align: center;
+}
+
+.style {
+    font-family: "times New Roman", Times, serif;
+    font-size: x-large;
+    background-color: chartreuse;
+}
+
+.log {
+    color: midnightblue;
+    background-color: #00CC99;
+    text-align: center;
+}
+
+.auto-style1 {
+    text-align: left;
+}
+
+.auto-style2 {
+    color: #009999;
+    font-family: "times New Roman", Times, serif;
+    font-size: x-large;
+}
+
+.auto-style3 {
+    font-family: "times New Roman", Times, serif;
+    font-size: x-large;
+}

@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Reg1</title>
+    <script src="Validate_Control.js"></script>
+    <link href="MyStyleSheet.css" type="text/css" rel="stylesheet" />
+    <style type="text/css">
+        .auto-style4 {
+            width: 174px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+    <h1>&nbsp;&nbsp; Registration Form</h1>
+    <table class="style1">
+        <tr>
+            <td class="auto-style4">&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp; First Name:</td>
+            <td class="auto-style1">
+                <input class="Text1" id="T1" type="text" onblur="Check1();" required="required" /></td>
+        </tr>
+        <tr>
+            <td class="auto-style4">&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp; Middle Initial:</td>
+            <td class="auto-style1">
+
+                <input style="width: 50px" id="T2" type="text" onblur="Check2(),Midll();" required="required" maxlength="1" /></td>
+        </tr>
+        <tr>
+            <td class="auto-style4">&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp; Last Name:</td>
+            <td class="auto-style1">
+                <input class="Text1" id="T3" type="text" onblur="Check3();"required="required" /></td>
+        </tr>
+        <tr>
+            <td class="auto-style4">&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp; City:</td>
+            <td class="auto-style1">
+                <input class="Text1" id="T4" type="text" onblur="Check4();"required="required" /></td>
+        </tr>
+        <tr>
+            <td class="auto-style4">&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp; State/Province:</td>
+            <td class="auto-style1">
+                <select class="Text1" id="Select1" name="D1">
+                     <option disabled="disabled" selected="selected">Please Choose...</option>
+                        <option>New York</option>
+                        <option>New Jersey</option>
+                        <option>Washington  </option>
+                        <option>Oklahoma </option>
+                        <option>Delaware </option>
+                        <option>Nevada</option>
+                        <option>Colorado</option>
+                        <option>New Mexico</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td style="vertical-align: top;" class="auto-style4">&nbsp;</td>
+            <td style="vertical-align: top;">&nbsp;&nbsp;&nbsp; Country:</td>
+            <td class="auto-style1">
+                <input id="Radio1" checked="checked" name="R1" type="radio" value="United States" />United States<br />
+                <input id="Radio2" name="R1" type="radio" value="V1" />Canada<br />
+                <input id="Radio3" name="R1" type="radio" value="V1" />Other</td>
+        </tr>
+        <tr>
+            <td class="auto-style4">&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp; Zip:</td>
+            <td class="auto-style1">
+                <input class="Text1" id="T5" type="text" onblur="zibcheck();" /></td>
+        </tr>
+        <tr>
+            <td class="auto-style4">&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp; E-Mail:</td>
+            <td class="auto-style1">
+                <input class="Text1" id="T6" type="text" onblur="ValidateEmail(T6);" placeholder="example@hotmail.com" /></td>
+        </tr>
+        <tr>
+            <td class="auto-style4">&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp; Username:</td>
+            <td class="auto-style1">
+                <input class="Text1" id="T7" type="text" onblur="Check5();"/></td>
+        </tr>
+        <tr>
+            <td class="auto-style4">&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp; Password:</td>
+            <td class="auto-style1">
+                <input class="Text1" id="Pas1" type="password" onblur="Check6();" required="required"/></td>
+        </tr>
+        <tr>
+            <td class="auto-style4">&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp; Repeat Password:</td>
+            <td class="auto-style1">
+                <input class="Text1" id="Pas2" type="password"  onblur=" PassMatch();" /></td>
+        </tr>
+        <tr>
+            <td class="auto-style4">&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp; Comments:</td>
+            <td class="auto-style1">
+                <textarea class="Text1" id="TextArea1" name="S1" rows="3" onblur="texterea();"></textarea></td>
+        </tr>
+    </table>
+
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input id="Checkbox1" type="checkbox" aria-checked="true" />&nbsp;&nbsp; &nbsp; I agree the site terms.
+
+    </p>
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+        <input id="btn" type="submit" name ="submit" value="Submit" onclick="Check1(),Check2(),Check3(),Check4(),Check5(),Check6(),PassMatch(),chkbox();"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+        <input id="btn1" type="reset" name="rest" value="Reset" />
+    </p>
+        </form>
+    </body>
+</html>
